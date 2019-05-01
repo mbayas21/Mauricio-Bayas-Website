@@ -1,3 +1,31 @@
+body{
+    background-image: url(../images/computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+div{
+    margin: 20px auto;
+    width: 50%;
+}
+
 img{
     width: 50%;
+}
+
+#images{
+    
+}
+
+#mainContent{
+    padding: 5px;
+    color: white;
+    float: left;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#mainContent h1{
 }
