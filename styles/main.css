@@ -2,23 +2,51 @@ body{
     background-image: url(../images/computer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    font-family: 'Acme', sans-serif;
 }
 
+/*div{
 
+}*/
 
-div{
-    margin: 20px auto;
-    width: 50%;
+img {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
 }
 
-img{
-    width: 50%;
+/*Class Selectors*/
+.mainContentContainer{
+    margin: 0 auto;
+    width: 75%;
+    color: red;
+    border: 3px solid red;
+    background: yellow;
 }
 
-#mainContent{
-    padding: 5px;
-    color: white;
-    float: left;
-    font-family: 'Varela Round', sans-serif;
+/*IS Selectors*/
+#imageDiv{
+    /*float: left;*/
+    margin: 0 auto;
+    width: 37.5%;
+    display: inline-block;
+}
+
+#descriptionDiv{
+    /*float: left;*/
+    text-align: center;     
+    margin: 0 auto;
+    width: 37.5%;  
+    display: inline-block;
+}
+
+#descriptionDivText{
+    /*display: inline;*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#descriptionDivText > h3{
+    margin: 0;
 }
