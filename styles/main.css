@@ -1,47 +1,123 @@
-body{
-    background-image: url(../images/computer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Acme', sans-serif;
+/*General Selectors*/
+*{
+    box-sizing: border-box;
 }
 
-/*div{
+body{
+    /*background-image: url(../images/computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    font-family: 'Acme', sans-serif;
+    margin: 0;
+    background: #D9BEB4;
+}
 
-}*/
+/* nav{
+    float:right;
+}
+
+
+ol{
+    list-style-type: none;
+}
+
+ol li{
+    display: inline;
+}   
+
+ol li a {
+    padding: 20px;
+    text-decoration: none;
+} */
 
 img {
     width: 100%;
     margin: 0 auto;
     height: 100%;
+    border-radius: 10px;
 }
 
 /*Class Selectors*/
-.mainContentContainer{
-    margin: 0 auto;
-    width: 75%;
-    color: red;
-    border: 3px solid red;
-    background: yellow;
+.main-header{
+    background-color: #2ddf5c;
+    width: 100%;
+    padding: 8px 16px
+} 
+
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
 }
 
-/*IS Selectors*/
-#imageDiv{
+.main-header__brand{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: #0e4f1f;
+}
+
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 135px);
+    vertical-align: middle;
+}
+
+.main-nav__items{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.main-nav__item{
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.main-nav__item  > a{
+    text-decoration: none;
+    color: #0e4f1f;
+}
+
+.main-nav__item > a:hover{
+    color:white;
+}
+
+.main-nav__item > a:active{
+    color:white;
+}
+
+
+/*ID Selectors*/
+#main-content-container{
+    margin: 75px 120px;
+    /*width: 75%;*/
+    color: red;
+    border: 3px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#image-div-container{
     /*float: left;*/
-    margin: 0 auto;
-    width: 37.5%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 56.25%;
     display: inline-block;
 }
 
-#descriptionDiv{
-    /*float: left;*/
+#description-div-container{
     text-align: center;     
     margin: 0 auto;
-    width: 37.5%;  
+    width: 18.75%;  
     display: inline-block;
+
 }
 
-#descriptionDivText{
-    /*display: inline;*/
+#description-div-text-container{
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -50,3 +126,10 @@ img {
 #descriptionDivText > h3{
     margin: 0;
 }
+
+
+.Arctic-Nights-1-hex { color: #8C6C8A; }
+.Arctic-Nights-2-hex { color: #BFC0D9; }
+.Arctic-Nights-3-hex { color: #B0B6D9; }
+.Arctic-Nights-4-hex { color: #081826; }
+.Arctic-Nights-5-hex { color: #D9BEB4; }
