@@ -9,7 +9,7 @@ body{
     background-size: cover;*/
     font-family: 'Acme', sans-serif;
     margin: 0;
-    background: #D9BEB4;
+    /*background: #D9BEB4;*/
 }
 
 /* nav{
@@ -77,16 +77,44 @@ img {
 .main-nav__item  > a{
     text-decoration: none;
     color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
 }
 
-.main-nav__item > a:hover{
-    color:white;
-}
-
+.main-nav__item > a:hover,
 .main-nav__item > a:active{
     color:white;
+    border-bottom: 5px solid white;
 }
 
+a:not(.main-nav__item--cta){
+    color: #e3e0d1;
+}
+
+.main-nav__item--cta a{
+    background: #ff1b68;
+    color:white;
+    border-radius: 8px;
+    padding: 8px 16px;
+
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+    color:#ff1b68;
+    background:white;
+    border-bottom: none;
+}
+
+.main-accomplishments__article{
+    background: #d5ffdc;
+    display:inline-block;
+    width: 30%;
+    vertical-align: middle;
+    text-align:center;
+    padding: 16px;
+    margin: 8px;
+}
 
 /*ID Selectors*/
 #main-content-container{
@@ -127,9 +155,26 @@ img {
     margin: 0;
 }
 
+#summary-overview{
+    background: url("../images/me2.jpg");
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: burlywood;
+}
 
-.Arctic-Nights-1-hex { color: #8C6C8A; }
-.Arctic-Nights-2-hex { color: #BFC0D9; }
-.Arctic-Nights-3-hex { color: #B0B6D9; }
-.Arctic-Nights-4-hex { color: #081826; }
-.Arctic-Nights-5-hex { color: #D9BEB4; }
+#summary-overview h1{
+    color:white;
+    text-align: center;
+    font-size: 60px;
+}
+
+#main-accomplishments > h1{
+    color: #2ddf5c;
+    text-align: center;
+    font-size: 60px;
+}
+
