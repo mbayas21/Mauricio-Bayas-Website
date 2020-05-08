@@ -209,5 +209,7 @@ h3.summary-overview__description{
 #main-accomplishments-nav{
     display: inline-block;
     padding: 0;
-
+}
+#main-accomplishments-nav li{
+    display: inline-block;
 }
