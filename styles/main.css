@@ -4,9 +4,6 @@
 }
 
 body{
-    /*background-image: url(../images/computer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
     font-family: 'Acme', sans-serif;
     margin: 0;
     background: #fefbd8;
@@ -112,7 +109,7 @@ h3.summary-overview__description{
 }
 
 .main-accomplishments__article{
-    background: #19b84c;
+    background: #f18973;
     color:white;
     display:inline-block;
     width: 31%;
@@ -137,15 +134,19 @@ h3.summary-overview__description{
     list-style-type: none;
 }
 
-.main-accomplishments__article--middle{
+/* .main-accomplishments__article--middle{
     background: #19b84c;
     color:white;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+} */
+
+.main-accomplishments__article--middle img{
+    margin: 0 auto;
 }
 
 .main-accomplishments__article__annotation{
     background: white;
-    color: #19b84c;
+    color: black;
     padding: 7px;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
     border-radius: 8px;
@@ -197,6 +198,11 @@ h3.summary-overview__description{
     background-size: contain;
     background-position: center;
     background-color: #f18973;
+}
+
+#accomplishments-div{
+    width: 100%;
+    text-align: center;
 }
 
 #main-accomplishments > h1{
