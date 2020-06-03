@@ -6,7 +6,6 @@
 body{
     font-family: 'Acme', sans-serif;
     margin: 0;
-    background: #fefbd8;
 }
 
 img {
@@ -16,11 +15,15 @@ img {
     border-radius: 10px;
 }
 
-/*Class Selectors*/
+/******************** Class Selectors ***********************/
 .main-header{
     background-color: #fefbd8;
     width: 100%;
-    padding: 8px 16px
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 } 
 
 .main-header > div{
@@ -39,7 +42,7 @@ img {
 .main-nav{
     display: inline-block;
     text-align: right;
-    width: calc(100% - 415px);
+    width: calc(100% - 300px);
     vertical-align: middle;
 }
 
@@ -76,7 +79,6 @@ a:not(.main-nav__item--cta){
     color:white;
     border-radius: 8px;
     padding: 8px 16px;
-
 }
 
 .main-nav__item--cta a:hover,
@@ -88,25 +90,12 @@ a:not(.main-nav__item--cta){
 
 .summary-overview__description{
     display:block;
-    margin: 0;
-    text-align: center;
     font-size: 60px;
-    color: white;
-    margin-top: 100px;
+    color: #bc5a45;
+    font-weight: 900;
+    margin: 0 auto;
 }
 
-h2.summary-overview__description{
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    margin: 0 100px;
-}
-
-h3.summary-overview__description{
-    margin: 0;
-}
 
 .main-accomplishments__article{
     background: #f18973;
@@ -121,38 +110,98 @@ h3.summary-overview__description{
     height: 270px;
 }
 
-.main-accomplishments__article h1{
-    font-size: 32px;
-    margin: 0;
-}
-
-.main-accomplishments__article h2{
-    padding: 0;
-}
-
-.main-accomplishments__article ul{
-    list-style-type: none;
-}
-
-/* .main-accomplishments__article--middle{
-    background: #19b84c;
-    color:white;
-    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
-} */
-
 .main-accomplishments__article--middle img{
     margin: 0 auto;
 }
 
-.main-accomplishments__article__annotation{
+.main-accomplishments__annotation{
     background: white;
     color: black;
-    padding: 7px;
+    padding: 16px;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
     border-radius: 8px;
+    display: inline-block;
+    margin: 7px 7px;
+    width: 75%;
 }
 
-/*ID Selectors*/
+.experiences{
+    display: inline-block;
+    width: 30%;
+}
+
+.experiences a{
+    text-decoration: none;
+}
+
+.experiences .main-accomplishments__annotation a:hover,
+.experiences .main-accomplishments__annotation a:active{
+    border-bottom: solid; 
+}
+
+
+/************************* ID Selectors ******************/
+#introduction{
+    background-image: url("../images/background-computer-arm-coffee.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: block;
+    margin-top: 45px;
+    position: relative;
+}
+
+.introduction-title{
+    display:block;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.introduction-name{
+    position: absolute;
+    top: 275px;
+    right: 75px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#profile-picture{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: auto;
+    margin-left: 35px;
+}
+
+#description{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+#description h1{
+    margin: 4px auto;
+}
+
+#description p{
+    text-align: left;
+    margin: 4px auto;
+}
+
+#description a{
+    text-decoration: none;
+    color: blue;
+}
+
 #main-content-container{
     margin: 75px 120px;
     color: red;
@@ -190,14 +239,12 @@ h3.summary-overview__description{
 }
 
 #summary-overview{
-    background: url("../images/background-image.jpg");
     width: 100%;
-    height: 600px;
-    padding: 10px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: #f18973;
+    height: 100px;
+    padding: 150px;
+    margin: 32px auto;
+    position: relative;
+    display: block;
 }
 
 #accomplishments-div{
@@ -205,11 +252,24 @@ h3.summary-overview__description{
     text-align: center;
 }
 
-#main-accomplishments > h1{
+#proffesional-experience{
+    background-color: #f4e1d2;
+    text-align: center;
+    padding-bottom: 50px;
+} 
+
+#thin-border{
+    height: 1px;
+    border-width: 1px;
+    width: 80%;
+    opacity: 1;
+}
+
+#proffesional-experience > h1{
     text-align: center;
     font-size: 60px;
-    margin-top: 10px;
     margin-bottom: 20px;
+    color: black;
 }
 
 #main-accomplishments-nav{
@@ -218,4 +278,41 @@ h3.summary-overview__description{
 }
 #main-accomplishments-nav li{
     display: inline-block;
+}
+
+#footer{
+    display: block;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#credits{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#footer-nav{
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-nav h2{
+    font-weight: 900;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 40px
+}
+
+#footer-nav li{
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.footer__image{
+    width:50px;
+    height:50px;
 }
