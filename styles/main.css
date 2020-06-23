@@ -16,18 +16,10 @@ img {
 }
 
 /******************** Class Selectors ***********************/
-.toggle-btn__bar {
-    width: 100%;
-    height: 0.2rem;
-    background: black;
-    display: block;
-    margin: 0.5rem 0;
-}
-
 .main-header{
     background-color: #fefbd8;
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     position: fixed;
     top: 0;
     left: 0;
@@ -42,17 +34,15 @@ img {
 .main-header__brand{
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.375rem;
+    font-size: 22px;
     color: #0e4f1f;
-    width: calc(100% - 25.3125rem);
+    width: calc(100% - 405px);
 }
 
-.main-nav {
-    /* mobile */
-    /* display: none; */
+.main-nav{
     display: inline-block;
     text-align: right;
-    width: calc(100% - 19.0625rem);
+    width: calc(100% - 300px);
     vertical-align: middle;
 }
 
@@ -64,14 +54,14 @@ img {
 
 .main-nav__item{
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 16px;
 }
 
 .main-nav__item  > a{
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
-    padding: 0.1875rem 0;
+    padding: 3px 0;
 }
 
 .main-nav__item > a:hover,
@@ -88,7 +78,7 @@ a:not(.main-nav__item--cta){
     background: #ff1b68;
     color:white;
     border-radius: 8px;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
 }
 
 .main-nav__item--cta a:hover,
@@ -100,7 +90,7 @@ a:not(.main-nav__item--cta){
 
 .summary-overview__description{
     display:block;
-    font-size: 3.75rem;
+    font-size: 60px;
     color: #bc5a45;
     font-weight: 900;
     margin: 0 auto;
@@ -114,10 +104,10 @@ a:not(.main-nav__item--cta){
     width: 31%;
     vertical-align: middle;
     text-align:center;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: 16px;
+    margin: 8px;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
-    height: 16.875rem;
+    height: 270px;
 }
 
 .main-accomplishments__article--middle img{
@@ -127,11 +117,11 @@ a:not(.main-nav__item--cta){
 .main-accomplishments__annotation{
     background: white;
     color: black;
-    padding: 1rem;
+    padding: 16px;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
     border-radius: 8px;
     display: inline-block;
-    margin: 0.4375rem 0.4375rem;
+    margin: 7px 7px;
     width: 75%;
 }
 
@@ -151,33 +141,23 @@ a:not(.main-nav__item--cta){
 
 
 /************************* ID Selectors ******************/
-#toggle-btn {
-    width: 2.5rem;
-    vertical-align: middle;
-    background: transparent;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none;
-}
-
-
 #introduction{
     background-image: url("../images/background-computer-arm-coffee.jpg");
     background-size: cover;
     width: 100%;
-    height: 37.5rem;
+    height: 600px;
     display: block;
-    margin-top: 2.8125rem;
+    margin-top: 45px;
     position: relative;
 }
 
 .introduction-title{
     display:block;
     text-align: center;
-    font-size: 3.75rem;
+    font-size: 60px;
     color: white;
     font-weight: 600;
-    margin-top: 0.1875rem;
+    margin-top: 3px;
 }
 
 .introduction-name{
@@ -195,7 +175,7 @@ a:not(.main-nav__item--cta){
     left: 0;
     width: 25%;
     height: auto;
-    margin-left: 2.1875rem;
+    margin-left: 35px;
 }
 
 #description{
@@ -204,20 +184,17 @@ a:not(.main-nav__item--cta){
     top: 0;
     right: 0;
     width: 65%;
-    padding-left: 0.625rem;
-    padding-right: 3.125rem;
-    max-height: 20rem;
+    padding-left: 10px;
+    padding-right: 50px;
 }
 
 #description h1{
-    margin: 0.25rem auto;
+    margin: 4px auto;
 }
 
 #description p{
     text-align: left;
-    margin: 0.25rem auto;
-    /* mobile */
-    /* font-size: 0.60rem */
+    margin: 4px auto;
 }
 
 #description a{
@@ -226,7 +203,7 @@ a:not(.main-nav__item--cta){
 }
 
 #main-content-container{
-    margin: 4.6875rem 7.5rem;
+    margin: 75px 120px;
     color: red;
     border: 3px;
     background: white;
@@ -235,10 +212,10 @@ a:not(.main-nav__item--cta){
 }
 
 #image-div-container{
-    margin-top: 0.31255rem;
+    margin-top: 5px;
     margin-bottom: 0;
-    margin-left: 6.25rem;
-    margin-right: 6.25rem;
+    margin-left: 100px;
+    margin-right: 100px;
     width: 56.25%;
     display: inline-block;
 }
@@ -263,9 +240,9 @@ a:not(.main-nav__item--cta){
 
 #summary-overview{
     width: 100%;
-    height: 6.25rem;
-    padding: 9.375rem;
-    margin: 2rem auto;
+    height: 100px;
+    padding: 150px;
+    margin: 32px auto;
     position: relative;
     display: block;
 }
@@ -278,20 +255,20 @@ a:not(.main-nav__item--cta){
 #proffesional-experience{
     background-color: #f4e1d2;
     text-align: center;
-    padding-bottom: 3.125rem;
+    padding-bottom: 50px;
 } 
 
-/* #thin-border{
-    height: .0625rem;
-    border-width: .0625rem;
+#thin-border{
+    height: 1px;
+    border-width: 1px;
     width: 80%;
     opacity: 1;
-} */
+}
 
 #proffesional-experience > h1{
     text-align: center;
-    font-size: 3.75rem;
-    margin-bottom: 1.25rem;
+    font-size: 60px;
+    margin-bottom: 20px;
     color: black;
 }
 
@@ -314,9 +291,6 @@ a:not(.main-nav__item--cta){
     position: absolute;
     bottom: 0;
     left: 0;
-    display: block;
-    text-align: center;
-    margin: 0;
 }
 
 #footer-nav{
@@ -330,51 +304,15 @@ a:not(.main-nav__item--cta){
     font-weight: 900;
     margin: 0;
     padding-top: 0;
-    padding-bottom: 2.5rem;
+    padding-bottom: 40px
 }
 
 #footer-nav li{
-    /* mobile */
-    /* display: block;
-    padding: 0 1rem; */
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 16px;
 }
 
 .footer__image{
-    width: 3.125rem;
-    height: 3.125rem;
+    width:50px;
+    height:50px;
 }
-
-/* @media(min-width: 47rem) {
-
-    #toggle-btn {
-        display: none;
-    }
-
-    #footer-nav li{
-        display: inline-block;
-        padding: 0 1rem;
-    }
-
-    #footer-nav h2{
-        padding-bottom: 2.5rem;
-    }
-    
-    #credits{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    .main-nav{
-        display: inline-block;
-        text-align: right;
-        width: calc(100% - 19.0625rem);
-        vertical-align: middle;
-    }
-
-    #description p{
-        font-size: 1rem;
-    }
-} */
