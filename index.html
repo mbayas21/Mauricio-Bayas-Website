@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Mauricio Bayas</title>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="styles/main.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.jpg" >
@@ -14,6 +14,11 @@
                 Aspiring Front End Developer
             </a>
         </div>
+        <!-- <button id ="nav-hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button> -->
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
@@ -31,13 +36,17 @@
             </ul>
         </nav>
     </header>
+
     <section id="introduction">
         <h1 class="introduction-title">Welcome to my website</h1>
         <h3 class="introduction-name">Mauricio Bayas</h3>
     </section>
+
     <section id="summary-overview">
-        <img id="profile-picture" src="images/me2.jpg">
-        <div id ="description">
+        <!-- <div id="profile-picture">
+            <img src="images/me2.jpg">
+        </div> -->
+        <!-- <div id ="description">
             <h1 class="summary-overview__description">About Me</h1>
                 <h1>Hello, my name is Mauricio Bayas.</h1>
                 <p>
@@ -48,26 +57,40 @@
                     When I'm not focused on web development, I enjoy watching netflix and movies and playing video games, going for jogs and playing basketball.
                     Thanks for visiting.
                 </p>
-        </div>
+        </div> -->
     </section>
-    <br>
-    <!-- <hr id="thin-border"></hr> -->
-    <section id="proffesional-experience">
-        <h1>My Professional Experience</h1>
-        <div id="accomplishments-div">
-            <div class="experiences">
-                <h3 class="main-accomplishments__annotation"><a href="https://mbayas21.github.io/Kaseys-Kreations/">Projects</a></h3>
+
+    <div id="flex-div">
+        <section id="description">
+            <h1 class="summary-overview__description">About Me</h1>
+            <h1>Hello, my name is Mauricio Bayas.</h1>
+            <p>
+                I was born in <a href="https://www.google.com/maps/place/Ecuador/@-1.3425155,-92.9445067,5z/data=!3m1!4b1!4m5!3m4!1s0x902387dda89a4bd5:0x9d76af04119c3702!8m2!3d-1.831239!4d-78.183406">Ecuador</a>, but I moved and grew up in Charlotte, North Carolina since I was seven years old.
+                I graduated from both high school and college in Charlotte.
+                I attended Central Piedmont Community College and graduated from UNC-Charlotte in 2018 with a B.S in Computer Science.
+                Since then, I've been working at AvidXchange in Charlotte since September 2018 as Test Automation.
+                When I'm not focused on web development, I enjoy watching netflix and movies and playing video games, going for jogs and playing basketball.
+                Thanks for visiting.
+            </p>
+        </section>
+
+        <section id="proffesional-experience">
+            <h1>My Professional Experience</h1>
+            <div id="accomplishments-div">
+                <div class="experiences">
+                    <h3 class="main-accomplishments__annotation"><a href="https://mbayas21.github.io/Kaseys-Kreations/">Projects</a></h3>
+                </div>
+                <div class="experiences">
+                    <h3 class="main-accomplishments__annotation"><a href="resume.html">Resume</a></h3>
+                </div>
+                <div class="experiences">
+                    <h3 class="main-accomplishments__annotation"><a title="Page Coming Soon">Experience</a></h3> 
+                </div>
             </div>
-            <div class="experiences">
-                <h3 class="main-accomplishments__annotation"><a href="resume.html">Resume</a></h3>
-            </div>
-            <div class="experiences">
-                <h3 class="main-accomplishments__annotation"><a title="Page Coming Soon">Experience</a></h3> 
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    
     <foooter id="footer">
-        <p id="credits"> &copy 2020 Made by Mauricio Bayas </p>
         <ul id="footer-nav">
             <h2>Connect With Me</h3>
             <li>
@@ -83,6 +106,7 @@
                 <a href="mailto:mauribayas_21@hotmail.com" title="My Resume"><img src="images/resume-icon.png" class="footer__image"></a>
             </li>
         </ul>
+        <p id="credits"> &copy 2020 Made by Mauricio Bayas </p>
     </foooter>
 </body>
 </html>

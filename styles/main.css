@@ -6,6 +6,8 @@
 body{
     font-family: 'Acme', sans-serif;
     margin: 0;
+    background-image: linear-gradient(to bottom, #7395AE , transparent);
+    opacity: 0.8;
 }
 
 img {
@@ -32,6 +34,9 @@ img {
     top: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 } 
 
 .main-header > div{
@@ -48,12 +53,18 @@ img {
 }
 
 .main-nav {
-    /* mobile */
-    /* display: none; */
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 19.0625rem);
-    vertical-align: middle;
+    /*** For Mobile ***/
+    display: none;
+}
+
+@media (min-width: 46.875rem) {
+    .main-nav, .main-nav__items{
+        display: flex; 
+    }
+
+    .main-nav__items {
+        align-items: flex-start;
+    }
 }
 
 .main-nav__items{
@@ -99,11 +110,15 @@ a:not(.main-nav__item--cta){
 }
 
 .summary-overview__description{
-    display:block;
+    display: block;
     font-size: 3.75rem;
-    color: #bc5a45;
     font-weight: 900;
     margin: 0 auto;
+    text-align: center;
+}
+
+.summary-overview__description + h1 {
+    text-align: center;
 }
 
 
@@ -135,11 +150,6 @@ a:not(.main-nav__item--cta){
     width: 75%;
 }
 
-.experiences{
-    display: inline-block;
-    width: 30%;
-}
-
 .experiences a{
     text-decoration: none;
 }
@@ -164,6 +174,7 @@ a:not(.main-nav__item--cta){
 #introduction{
     background-image: url("../images/background-computer-arm-coffee.jpg");
     background-size: cover;
+    background-position: 30% 50%;
     width: 100%;
     height: 37.5rem;
     display: block;
@@ -182,31 +193,69 @@ a:not(.main-nav__item--cta){
 
 .introduction-name{
     position: absolute;
-    top: 275px;
-    right: 75px;
     font-size: 50px;
     font-weight: 300;
 }
 
-#profile-picture{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25%;
-    height: auto;
-    margin-left: 2.1875rem;
+@media (min-width: 18.75rem) {
+    .introduction-name {
+        top: 26.5625rem;
+        left: 6.25rem;
+    }
 }
 
-#description{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 65%;
-    padding-left: 0.625rem;
-    padding-right: 3.125rem;
-    max-height: 20rem;
+@media (min-width: 37.5rem) {
+    .introduction-name {
+        left: 10rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .introduction-name {
+        left: 13rem;
+    }
+}
+
+@media (min-width: 62.5rem) {
+    .introduction-name {
+        left: 16rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .introduction-name {
+        left: 23rem;
+    }
+}
+
+#profile-picture{
+    display: block;
+}
+
+@media(min-width: 35.375rem) {
+    #profile-picture {
+        display: flex;
+    }
+}
+
+    #description{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+}
+
+@media (min-width: 18.75rem) {
+    #description {
+        margin: 0;
+    }
+}
+
+@media (min-width: 43.75rem){
+    #description {
+        flex: 1 1 0;
+        justify-content: center;
+        margin: auto 1.5rem;
+    }
 }
 
 #description h1{
@@ -214,10 +263,8 @@ a:not(.main-nav__item--cta){
 }
 
 #description p{
-    text-align: left;
+    text-align: center;
     margin: 0.25rem auto;
-    /* mobile */
-    /* font-size: 0.60rem */
 }
 
 #description a{
@@ -268,6 +315,23 @@ a:not(.main-nav__item--cta){
     margin: 2rem auto;
     position: relative;
     display: block;
+    background: url("../images/me.jpg");
+    background-size: contain;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+#flex-div {
+    display: flex;
+    flex-direction: column; 
+}
+
+@media(min-width: 43.75rem) {
+    
+    #flex-div {
+        flex-direction: row;       
+    }
 }
 
 #accomplishments-div{
@@ -275,24 +339,47 @@ a:not(.main-nav__item--cta){
     text-align: center;
 }
 
+@media  (min-width: 18.75rem ) {
+
+    #accomplishments-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+@media  (min-width: 18.75rem) and (max-width: 43.75rem){
+
+    .experiences .main-accomplishments__annotation {
+        max-width: 18rem;
+    }
+}
+
 #proffesional-experience{
-    background-color: #f4e1d2;
-    text-align: center;
     padding-bottom: 3.125rem;
+    display: flex;
 } 
 
-/* #thin-border{
-    height: .0625rem;
-    border-width: .0625rem;
-    width: 80%;
-    opacity: 1;
-} */
+@media  (min-width: 18.75rem) {
+
+    #proffesional-experience {
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 43.75rem) {
+
+    #proffesional-experience {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 #proffesional-experience > h1{
     text-align: center;
     font-size: 3.75rem;
     margin-bottom: 1.25rem;
-    color: black;
 }
 
 #main-accomplishments-nav{
@@ -311,12 +398,24 @@ a:not(.main-nav__item--cta){
 }
 
 #credits{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    text-align: center;
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    
+}
+
+@media (min-width: 18.75rem)  and (max-width: 28.125rem){
+    #credits {
+        text-align: center;
+    }
+}
+
+@media (min-width: 28.1875rem) {
+    #credits {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;  
+    }
 }
 
 #footer-nav{
@@ -326,6 +425,14 @@ a:not(.main-nav__item--cta){
     text-align: center;
 }
 
+@media (min-width: 18.75rem) and (max-width: 28.125rem) {
+   
+    #footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 #footer-nav h2{
     font-weight: 900;
     margin: 0;
@@ -333,10 +440,14 @@ a:not(.main-nav__item--cta){
     padding-bottom: 2.5rem;
 }
 
+@media (min-width: 18.75rem) {
+    #footer-nav h2 {
+        padding: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
 #footer-nav li{
-    /* mobile */
-    /* display: block;
-    padding: 0 1rem; */
     display: inline-block;
     padding: 0 1rem;
 }
@@ -345,36 +456,4 @@ a:not(.main-nav__item--cta){
     width: 3.125rem;
     height: 3.125rem;
 }
-
-/* @media(min-width: 47rem) {
-
-    #toggle-btn {
-        display: none;
-    }
-
-    #footer-nav li{
-        display: inline-block;
-        padding: 0 1rem;
-    }
-
-    #footer-nav h2{
-        padding-bottom: 2.5rem;
-    }
-    
-    #credits{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    .main-nav{
-        display: inline-block;
-        text-align: right;
-        width: calc(100% - 19.0625rem);
-        vertical-align: middle;
-    }
-
-    #description p{
-        font-size: 1rem;
-    }
-} */
+ 
