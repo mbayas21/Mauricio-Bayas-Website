@@ -3,7 +3,7 @@ body {
 }
 
 
-/***** ID SELECTORS *****/
+/*********** ID SELECTORS ***********/
 #title {
   margin-top: 5rem;
   text-align: center;
@@ -24,7 +24,7 @@ body {
 
 
 
-/*****CLASS SELECTORS *****/
+/***********  CLASS SELECTORS ***********/
 .project-list__items {
   padding-top: 10rem;
 }
