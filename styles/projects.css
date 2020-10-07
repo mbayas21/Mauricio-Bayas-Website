@@ -1,0 +1,57 @@
+body {
+  background: white;
+}
+
+
+/***** ID SELECTORS *****/
+#title {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 6rem;
+}
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 20rem;
+}
+
+#project-list:first-child {
+  padding-top: 0;
+}
+
+
+
+/*****CLASS SELECTORS *****/
+.project-list__items {
+  padding-top: 10rem;
+}
+
+.project-list__items {
+  flex-grow: 3;
+  padding: 0;
+}
+
+.project-samples {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  justify-content: space-evenly;   
+}
+
+.project-title { 
+  text-align: center;
+  margin: 0;
+  padding: 5rem 0;
+  font-size: 3rem;
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-title:hover,
+.project-title:active {
+  color: red;
+}
