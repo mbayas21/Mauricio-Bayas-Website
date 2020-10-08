@@ -3,7 +3,7 @@ body {
 }
 
 
-/*********** ID SELECTORS ***********/
+/***********  ID SELECTORS  ***********/
 #title {
   margin-top: 5rem;
   text-align: center;
@@ -15,16 +15,25 @@ body {
   flex-direction: column;
   justify-content: center;
   list-style-type: none;
-  margin: 0 20rem;
+  margin: 0 2rem;
 }
 
 #project-list:first-child {
   padding-top: 0;
 }
 
+#bootstrap-icon {
+  height: 5rem;
+  width: 4.5rem;
+  margin: 0;
+}
 
+/***********  CLASS SELECTORS  ***********/
+.tech-used-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
-/***********  CLASS SELECTORS ***********/
 .project-list__items {
   padding-top: 10rem;
 }
@@ -41,6 +50,7 @@ body {
   justify-content: space-evenly;   
 }
 
+
 .project-title { 
   text-align: center;
   margin: 0;
@@ -54,4 +64,17 @@ body {
 .project-title:hover,
 .project-title:active {
   color: red;
+}
+
+.tech-used-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+@media(min-width: 26rem) {
+  #project-list {
+    margin: 0 15rem;
+  }
 }
